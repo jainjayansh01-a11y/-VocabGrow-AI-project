@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VocabGrow AI — Your vocabulary garden</title><link rel="stylesheet" href="/styles.css"></head>
+<body><div class="shell">
+<aside class="sidebar"><div class="brand"><span class="brand-mark">V</span><div><strong>VocabGrow</strong><small>AI WORD COACH</small></div></div>
+<div class="side-label">YOUR SPACE</div><a class="nav active" href="#learn">✦ <span>Word coach</span></a>
+<a class="nav" href="#wordbook">▤ <span>My wordbook</span><b id="navCount">0</b></a><a class="nav" href="#practice">◎ <span>Practice quiz</span></a>
+<div class="sidebar-bottom"><div class="privacy"><span class="dot"></span><div><b>Private by design</b><small>Local AI · No cloud API</small></div></div>
+<div class="profile"><div class="avatar">🌱</div><div><b>Word Explorer</b><small>Keep growing daily</small></div></div></div></aside>
+<main class="main"><header class="topbar"><div class="mobile-brand">🌱 VocabGrow AI</div><div class="status-pill" id="modelStatus"><i></i> Connecting local AI…</div></header>
+<section class="hero" id="learn"><div class="eyebrow">YOUR DAILY LANGUAGE GARDEN</div><h1>Grow your words.<br><em>Find your voice.</em></h1>
+<p>Explore new vocabulary, understand it in context, and make every word yours — with your private on-device AI coach.</p>
+<div class="hero-tags"><span>✦ Learn in context</span><span>◈ Build your wordbook</span><span>⌁ Practise anytime</span></div></section>
+<section class="coach card"><div class="section-head"><div><span class="kicker">WORD COACH</span><h2>What word are we growing today?</h2></div><span class="sparkle">✳</span></div>
+<form id="wordForm" class="word-form"><div class="input-wrap"><span>⌕</span><input id="wordInput" maxlength="100" placeholder="Try resilient, eloquent, curious…" autocomplete="off" required></div>
+<select id="levelSelect" aria-label="English level"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select>
+<button class="primary" id="learnBtn" type="submit">Grow this word <span>→</span></button></form>
+<div class="quick-words"><span>TRY:</span><button type="button">Serendipity</button><button type="button">Meticulous</button><button type="button">Resilient</button><button type="button">Ubiquitous</button></div>
+<div id="coachResult" class="result hidden" aria-live="polite"></div></section>
+<div class="section-title" id="wordbook"><div><span class="kicker">YOUR COLLECTION</span><h2>My wordbook <span class="count" id="wordCount">0</span></h2></div><button id="clearWords" class="ghost">Clear all</button></div>
+<section class="wordbook card"><div id="emptyWords" class="empty"><div class="empty-icon">✿</div><h3>Your word garden is waiting</h3><p>Learn a word and save it here. Your collection stays in this browser.</p></div><div id="wordList" class="word-list"></div></section>
+<section class="practice card" id="practice"><div><span class="kicker">MAKE IT STICK</span><h2>Ready to practise?</h2><p>Build a short quiz from the words you’ve saved.</p></div>
+<button id="quizBtn" class="secondary">✦ Generate my quiz <span>→</span></button><div id="quizResult" class="result hidden" aria-live="polite"></div></section>
+<footer>Made for curious minds <span>•</span> Powered by local AI <span>•</span> Your words stay yours</footer></main></div><script src="/app.js"></script></body></html>
